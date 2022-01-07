@@ -1,3 +1,12 @@
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +14,77 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App{
+  width: 50rem;
+  margin: 0 auto;
+
+}
+
+.App>h1{
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.Tour{
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background: cornsilk ;
+  margin: 2rem 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.name-price{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.Tour img{
+  width:35rem;
+  height:35rem;
+  object-fit: cover;
+  border-radius: .25rem;
+  margin:0 auto;
+
+}
+
+.more-btn{
+  border: none;
+  color:turquoise;
+  background-color: transparent;
+
+}
+
+
+.Tour>button{
+  margin: 0 4rem 1rem 4rem;
+  
+  border: none;
+  background-color: violet;
+  color: aliceblue;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+
+.Tour>button:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.refresh-btn{
+  border: none;
+  background: darkcyan;
+  color: white;
+  border-radius: .25rem;
+  padding: .5rem;
 }
