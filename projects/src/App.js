@@ -1,9 +1,16 @@
 import { Container } from "react-bootstrap";
+import Review from "./Review";
+import reviews from "./data";
+import { useState } from "react";
 function App() {
+  const [data, setData] = useState(reviews);
   return (
     <div>
-      <Container className='d-flex justify-content-center mt-3'>
-        <h1>Wellcome to starter</h1>
+      <Container>
+        <div className='contain'>
+          <h1>Our Reviews</h1>
+          <Review data={data} />
+        </div>
       </Container>
     </div>
   );
